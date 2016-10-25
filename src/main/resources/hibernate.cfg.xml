@@ -7,5 +7,8 @@
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/magazyn?zeroDateTimeBehavior=convertToNull</property>
     <property name="hibernate.connection.username">magazyn</property>
     <property name="hibernate.connection.password">magazyn</property>
+    
+    <!--<mapping class="pl.bladekp.magazyn.model.Parameter"/>-->
+    <mapping package="pl.bladekp.magazyn.model"/>
   </session-factory>
 </hibernate-configuration>
