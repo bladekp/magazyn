@@ -3,12 +3,11 @@
 <hibernate-configuration>
   <session-factory>
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/magazyn?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/magazyn?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=Europe/Warsaw</property>
     <property name="hibernate.connection.username">magazyn</property>
     <property name="hibernate.connection.password">magazyn</property>
     
-    <!--<mapping class="pl.bladekp.magazyn.model.Parameter"/>-->
-    <mapping package="pl.bladekp.magazyn.model"/>
+    <mapping class="pl.bladekp.magazyn.model.Parameter"/>
   </session-factory>
 </hibernate-configuration>
