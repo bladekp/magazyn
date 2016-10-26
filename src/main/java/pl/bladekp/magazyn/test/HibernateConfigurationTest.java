@@ -25,6 +25,6 @@ public class HibernateConfigurationTest {
         session.getTransaction().commit();
         
         //closing session
-        HibernateUtil.getSessionFactory().close();
+        session.close();
     }
 }
